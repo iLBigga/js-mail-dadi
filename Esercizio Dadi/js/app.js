@@ -5,10 +5,12 @@ const bot = []
 
 // Genero Numero random per player
 const playerRandom =  Math.floor(Math.random() * 6 + 1 );
+// Pusho il risultato in player
 player.push(playerRandom)
 
 // Genero Numero random per bot
 const botRandom =  Math.floor(Math.random() * 6 + 1 );
+// Pusho il risultato in bot
 bot.push(botRandom)
 
 // Creo variabile per identificare elemento 0 nell'array
