@@ -22,8 +22,12 @@ const botResult = bot[0]
 if (playerResult > botResult) {
     // Stampo 'Player vince'
     console.log('Player vince')
+// ALTRIMENTI SE il risultato è uguale
+} else if (playerResult === botResult){
+     // Stampo 'Pareggio'
+    console.log('Pareggio')
 // ALTRIMENTI
 } else {
-     // Stampo 'Bot vince'
+    // Stampo 'Bot vince'
     console.log('Bot vince')
 }
