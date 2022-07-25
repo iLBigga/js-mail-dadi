@@ -33,7 +33,7 @@ if (utentMail != '') {
 if (emailCheck) {
     // Stampo 'Email Valida'
     console.log('Email valida');
-// Altrimenti
+// ALTRIMENTI
 } else {
     //Stampo 'Email non valida'
     console.log('Email non valida');
