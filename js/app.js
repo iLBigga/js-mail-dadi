@@ -4,19 +4,29 @@ const email = ["email1@gmail.com", "email2@gmail.com" , "email3@gmail.com" , "em
 // Chiedo all'utente la sua email
 const utentMail = prompt(`Qual'è la tua Email?`)
 
+
 // Creo variabile per salvare risultato ciclo for
 let emailCheck
 
-//Creo ciclo for
-for (i = 0; i < email.length; i ++) {
-    const findEmail = email[i]
 
-    // Controllo se l'email dell'utente è all'interno dell'array
-    // SE l'email è all'interno dell'array
-    if (utentMail === findEmail) {
-        // Salvo risultato nella variabile EmailCheck
-        emailCheck = true
+// Controllo se dati inseriti sono corretti
+// SE utenMail non è vuoto
+if (utentMail != '') {
+    //Creo ciclo for
+    for (i = 0; i < email.length; i ++) {
+        // Creo una variabile per tenere traccia dell'elemento selezionano nel loop
+        const findEmail = email[i]
+    
+        // SE l'email è all'interno dell'array
+        if (utentMail === findEmail) {
+            // Salvo risultato nella variabile EmailCheck
+            emailCheck = true
+        }
     }
+// ALTRIMENTI
+} else {
+    // Ivio alert 
+    alert('Email non valida')
 }
 
 // SE ecailChek è true
